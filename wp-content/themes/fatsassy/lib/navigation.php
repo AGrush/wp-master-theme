@@ -11,7 +11,7 @@ add_action( 'init', '_themename_register_menus' );
 
 
 
-
+//inserting aria attributes for dropdown menus
 function _themename_aria_hasdropdown($atts, $item, $args) {
     if($args->theme_location == 'main-menu') {
         if(in_array('menu-item-has-children', $item->classes)){
@@ -19,6 +19,7 @@ function _themename_aria_hasdropdown($atts, $item, $args) {
             $atts['aria-expanded'] = 'false';
         }
     }
+    
     return $atts;
 }
 
