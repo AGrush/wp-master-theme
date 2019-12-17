@@ -4,7 +4,7 @@
 
 //override the parent function
 function _themename_post_meta() {
-echo 'hsfdfsd';
+echo 'hsfdfsdxx';
 }
 
 
